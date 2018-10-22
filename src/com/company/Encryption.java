@@ -46,6 +46,6 @@ public class Encryption {
     Seed represents the word being inputted into the array. Key represents the key at which is assigned to each user. This takes
     the amount of characters in the input, and makes an array with that amount of characters. Then it makes sure that for each
     character, the new encrypted character is generated. This also prevents counting higher than 32. Once the encryption is
-    generated, it is displayed.
+    generated, it is displayed. 
      */
 }
