@@ -16,7 +16,10 @@ public class User {
             i++;
         }
     }
-
+/*
+This generates the user class for the rest of the code. It generates the object for the key to which they will be later assigned.
+It also shows the key the user may have.
+ */
     public boolean hasAccess(User u){
         boolean status = false;
         for(int i=0;i<this.keys.length;i++){
@@ -48,7 +51,11 @@ public class User {
             }
         }
     }
-
+/*
+These allow for the addition of giving access or revoking access to the specific users. The hasAccess class shows the status of
+the user and whether they have a key or not. The grant class adds the keys to the user, which will let them view the message.
+Revoke class takes away that key, restricting access to the key, which will prohibit the user from viewing the message.
+ */
     public String getKey(){
         return this.key;
     }
@@ -77,4 +84,9 @@ public class User {
             }
         }
     }
+/*
+Class say allows for the specific user to be able to see the messages if they have the key. It states the encrypted if the
+specific user has access to the correct key. If they do, it will display what the user is trying to see. If not, it will display
+the encrypted message, preventing the user from being able to view the message.
+ */
 }
